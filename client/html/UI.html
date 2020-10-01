@@ -1,0 +1,267 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <style>
+			 #depositUI, #withdrawUI, #transferUI, #general, #topbar
+			 {display: none;}
+		</style>
+	</head>
+    <body>
+    	<div class="container">
+    		<div id="result"></div>
+    		<div class="topbar" id="topbar">
+    			<div class="cont-p-1">
+    				<div class="parale-1 "></div>
+    			</div>
+    			<div class="cont-p-2">
+    				<div class="parale-2"></div>
+    			</div>
+    			<div class="cont-p-3">
+    				<div class="parale-3"></div>
+    			</div>
+    			<nav>
+    				<div class="logo-topbar"></div>
+    				<button class="btn-sign-out">Logout<i class="fas fa-sign-out-alt"></i></button>
+    			</nav>
+    		</div>
+<!-- ########### GENERAL ###########  -->
+    		<div class="cont-content" id="general">
+    			<div class="flex">
+    				<div class="balance">
+	    				<p style="color: white; padding-top: 20px;">&nbsp;&nbsp;Welcome<br>
+	    					<span class="name">&nbsp;<span class="username1"></span></span><br>
+	    					&nbsp;&nbsp;Current Balance<br>
+	    					&nbsp;&nbsp;<span class="money"><span class="euro"></span><span class="curbalance"></span>$</span>
+	    				</p>
+		    		</div>
+		    		<div class="list-btn">
+		    			<button class="btn btn-blue" id="deposit">
+		    				<i class="fas fa-money-bill-alt"></i>
+		    				<span class="fas fa-hand-holding-usd icon"></span>
+		    				<p>Deposit</p>
+		    				
+		    			</button>
+			    		<button class="btn btn-violet" id="withdraw">
+			    			<i class="fas fa-credit-card"></i>
+		    				<span class="fas fa-credit-card icon"></span>
+		    				<p>Withdraw</p>
+		    				
+			    		</button>
+			    		<button class="btn btn-orange" id="transfer">
+			    			<i class="fas fa-exchange-alt"></i>
+		    				<span class="fas fa-exchange-alt icon"></span>
+		    				<p>Transfer</p>
+		    				
+						</button>
+					</div>
+				</div>
+				<div class="flex">
+    				<div class="list-btn" style="margin-right: 35px;">
+						<button class="btn btn-violet" id="fastwithdraw">
+			    			<i class="fas fa-angle-double-right"></i>
+		    				<span class="fas fa-money-bill-alt icon"></span>
+							<p>Quick 100$</p>
+							</button>
+					</div>
+					<div class="flex">
+    					<button class="btn btn-violet" id="fastwth" style="margin-right: 35px;">
+			    			<i class="fas fa-align-justify"></i>
+		    				<span class="far fa-money-bill-alt icon"></span>
+							<p>Quick 500$</p>
+							</button>
+					</div>
+					<div class="flex">
+    					<button class="btn btn-violet" id="fastdep">
+			    			<i class="fas fa-arrows-alt"></i>
+		    				<span class="fas fa-hand-holding-usd icon"></span>
+							<p>Deposit 100$</p>
+							</button>
+    				</div>
+    			</div>
+			</div>
+			
+<!-- ########### DEPOSIT ###########  -->
+	    	<div class="cont-content" id="depositUI">
+    			<div class="flex">
+    				<div class="btn_inside btn-blue banniere">
+    					<p>Deposit&nbsp;Money</p>
+		    			
+    				</div>
+    				<button class="btn btn-grey back">
+    					<i class="fas fa-home"></i>
+	    				<span class="fas fa-arrow-left icon"></span>
+	    				<p>Return</p>
+    				</button>
+    			</div>
+    			<form id="deposit1">
+    				<div class="input-cont">
+    					<label>How much do you want to deposit?</label>
+    					<input id="amount" type="number" placeholder="" style="background:  rgba(0, 0, 0, 0.5);">
+    				</div>
+    				<button class="btn btn-green" type="submit">
+    					<i class="fas fa-check"></i>
+	    				<span class="fas fa-check icon"></span>
+	    				<p>Submit</p>
+
+    				</button>
+				</form>
+	    	</div>
+<!-- ########### WITHDRAW ###########  -->
+	    	<div class="cont-content" id="withdrawUI">
+    			<div class="flex">
+    				<div class="btn_inside btn-violet banniere">
+    					<p>Withdraw&nbsp;Money</p>
+		    			
+    				</div>
+    				<button class="btn btn-grey back">
+    					<i class="fas fa-home"></i>
+	    				<span class="fas fa-arrow-left icon"></span>
+	    				<p>Return</p>
+	    				
+    				</button>
+    			</div>
+    			<form id="withdraw1">
+    				<div class="input-cont">
+    					<label>How much do you want to withdraw?</label>
+    					<input id="amountw" type="number" placeholder="" style="background:  rgba(0, 0, 0, 0.5);">
+    				</div>
+    				<button class="btn btn-green" type="submit">
+    					<i class="fas fa-check"></i>
+	    				<span class="fas fa-check icon"></span>
+	    				<p>Submit</p>
+	    				
+    				</button>
+				</form>
+	    	</div>
+<!-- ########### TRANSFER ###########  -->
+	    	<div class="cont-content" id="transferUI">
+    			<div class="flex">
+    				<div class="btn_inside btn-orange banniere">
+    					<p>Transfer&nbsp;Money</p>
+    				</div>
+    				<button class="btn btn-grey back">
+    					<i class="fas fa-home"></i>
+	    				<span class="fas fa-arrow-left icon"></span>
+	    				<p>Return</p>
+    				</button>
+    			</div>
+    			<form id="transfer1">
+    				<div class="double-input">
+    					<div class="input-cont">
+	    					<label>How much do you want to transfer?</label>
+	    					<input id="amountt" type="number" placeholder="" style="background:  rgba(0, 0, 0, 0.5); height: 35px; font-size: 20px;">
+	    				</div>
+	    				<div class="input-cont">
+	    					<label>Which player do you want to transfer? (ID)</label>
+	    					<input id="to" type="number" placeholder="" style="background:  rgba(0, 0, 0, 0.5); height: 35px; font-size: 20px;">
+	    				</div>
+    				</div>
+    				<button class="btn btn-green" type="submit">
+    					<i class="fas fa-check"></i>
+	    				<span class="fas fa-check icon"></span>
+	    				<p>Submit</p>
+    				</button>
+				</form>
+	    	</div>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		
+    	<script type="text/javascript">
+    		$(function() {
+				window.addEventListener('message', function(event) {
+					if (event.data.type === "openGeneral"){
+		                $('#general').show();
+		                $('body').addClass("active");
+						$('#topbar').css('display', 'flex')
+					} else if(event.data.type === "balanceHUD") {
+							$('.username1').html(event.data.player);
+							$('.curbalance').html(event.data.balance);
+					} else if (event.data.type === "closeAll"){
+		                $('#general, #transferUI, #withdrawUI, #depositUI, #topbar').hide();
+		                $('body').removeClass("active");
+					}
+				});
+			});
+
+    		$('.btn-sign-out').click(function(){
+	            $('#general, #transferUI, #withdrawUI, #depositUI, #topbar').hide();
+	            $('body').removeClass("active");
+	            $.post('http://new_banking/NUIFocusOff', JSON.stringify({}));
+	        })
+	        $('.back').click(function(){
+	            $('#depositUI, #withdrawUI, #transferUI').hide();
+	            $('#general').show();
+	        })
+	        $('#deposit').click(function(){
+	            $('#general').hide();
+	            $('#depositUI').show();
+	        })
+               
+	        $('#withdraw').click(function(){
+	            $('#general').hide();
+	            $('#withdrawUI').show();
+	        })
+
+	        $('#transfer').click(function(){
+	            $('#general').hide();
+	            $('#transferUI').show();
+	        })
+            
+            $('#fastwithdraw').click(function(){
+			$.post('http://new_banking/quickCash', JSON.stringify({
+			}));
+			})
+
+			$('#fastwth').click(function(){
+			$.post('http://new_banking/cash', JSON.stringify({
+			}));
+			})
+
+			$('#fastdep').click(function(){
+			$.post('http://new_banking/depfast', JSON.stringify({
+			}));
+			})
+
+			$("#transfer1").submit(function(e) {
+		        e.preventDefault(); // Prevent form from submitting
+		        $.post('http://new_banking/transfer', JSON.stringify({
+					to: $("#to").val(),
+		            amountt: $("#amountt").val()
+		        }));
+				$('#transferUI').hide();
+				$('#general').show();
+				$("#amountt").val('');
+			});
+
+	        $("#deposit1").submit(function(e) {
+		        e.preventDefault(); // Prevent form from submitting
+		        $.post('http://new_banking/deposit', JSON.stringify({
+		            amount: $("#amount").val()
+		        }));
+				$('#depositUI').hide();
+				$('#general').show();
+				$("#amount").val('');
+			});
+
+			$("#withdraw1").submit(function(e) {
+				e.preventDefault(); // Prevent form from submitting
+		        $.post('http://new_banking/withdrawl', JSON.stringify({
+		            amountw: $("#amountw").val()
+		        }));
+				$('#withdrawUI').hide();
+				$('#general').show();
+				$("#amountw").val('');
+			});
+			document.onkeyup = function(data){
+		        if (data.which == 27){
+		            $('#general, #transferUI, #withdrawUI, #depositUI, #topbar').hide();
+		            $('body').removeClass("active");
+		            $.post('http://new_banking/NUIFocusOff', JSON.stringify({}));
+		        }
+		    }
+    	</script>
+    </body>
+  </html>
