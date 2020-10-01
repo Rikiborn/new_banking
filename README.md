@@ -3,6 +3,7 @@
 - Quick deposit and withdraw.
 - Clear UI.
 - Different animations.
+- ATM.
 
 Requirements ;
 
