@@ -1,7 +1,7 @@
 # new_banking
 
 - Quick deposit and withdraw.
-- Clear UI.
+- Clean UI.
 - Different animations.
 - ATM.
 
