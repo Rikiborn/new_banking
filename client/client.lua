@@ -267,7 +267,7 @@ end)
 --===============================================
 
 function nearBank()
-	local player = GetPlayerPed(-1)
+	local player = PlayerPedId()
 	local playerloc = GetEntityCoords(player, 0)
 
 	for _, search in pairs(Config.Bank) do
@@ -283,7 +283,7 @@ end
 function nearATM()
 	for i = 1, #Config.ATMs do
 
-		local objFound = GetClosestObjectOfType( GetEntityCoords(PlayerPedId()), 0.75, Config.ATMs[i], 0, 0, 0)
+		local objFound = GetClosestObjectOfType(GetEntityCoords(PlayerPedId()), 0.75, Config.ATMs[i], 0, 0, 0)
 		
 		if DoesEntityExist(objFound) then
 		  TaskTurnPedToFaceEntity(PlayerPedId(), objFound, 3.0)
