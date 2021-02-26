@@ -311,8 +311,6 @@ function closeUI()
 end
 
 function openUI()
-	local player = GetPlayerPed(-1)
-
 	if Config.Animation == true and nearBank() then
 		playAnim('mp_common', 'givetake1_a', Config.AnimationTime)
 		Citizen.Wait(Config.AnimationTime)
